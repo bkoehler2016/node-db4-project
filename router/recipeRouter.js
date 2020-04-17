@@ -12,7 +12,7 @@ router.get("/", (request, response) => {
     .catch(error => {
       console.log("Error: ", error);
       response.status(500).json({ message: "Failed to retrieve recipes" });
-    });2
+    });
 });
 
 router.get("/:id/shoppingList", (request, response) => {
